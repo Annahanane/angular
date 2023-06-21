@@ -1,0 +1,14 @@
+.container{
+    position:relative;
+    height: 400px;
+    width: 500px;
+    margin: 100px;
+    background-color: rgb(188, 144, 228);
+    
+}   
+.image{
+    position:absolute;
+    height: 100px;
+    width: 200px;
+
+}
