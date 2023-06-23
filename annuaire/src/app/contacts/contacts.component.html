@@ -1,8 +1,8 @@
 <div class="container">
-    <ul>
-         <li *ngFor="let Contact of tabContact">{{ Contact.firstname }}</li>
-         <li *ngFor="let Contact of tabContact">{{ Contact.lastname }}</li>
-         <li *ngFor="let Contact of tabContact">{{ Contact.phone}}</li>
-         <li *ngFor="let Contact of tabContact">{{ Contact.email}}</li>
-    </ul>
+    <div *ngFor="let tmp of tabContact">
+        <app-chats [newChat] = "tmp"></app-chats> 
+      
+              
+      </div>
+      
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Chat } from 'src/models/chat.models'
 
 
@@ -8,13 +8,15 @@ import { Chat } from 'src/models/chat.models'
   styleUrls: ['./chats.component.css']
 })
 export class ChatsComponent implements OnInit {
-  newChat !: Chat;
-  ngOnInit() {
-    this.newChat = new Chat;
-    this.newChat.nom = 'toto';
-    this.newChat.nombre = 1;
-    this.newChat.coleur = 'blanc';
-    this.newChat.img = 'assets/chats/cat-g1.jpg';
+  @Input() newChat !: Chat;
+
+  ngOnInit(): void {
+    // this.newChat = new Chat;
+    // this.newChat.firstname = 'toto';
+    // this.newChat.lastname = '';
+    // this.newChat.phone = 12;
+    // this.newChat.email = 'ffgg@hhhk.com';
+    // this.newChat.img = 'assets/chats/cat-g1.jpg';
     
   }
 
