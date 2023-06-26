@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ChatsComponent } from './chats/chats.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { DetailComponent } from './detail/detail.component';
 
 
 
@@ -13,11 +14,11 @@ import { ContactsComponent } from './contacts/contacts.component';
     AppComponent,
     ChatsComponent,
     ContactsComponent,
-    
-
+    DetailComponent,
   ],
   imports: [
     BrowserModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

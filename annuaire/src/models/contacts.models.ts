@@ -4,4 +4,5 @@ export class Contact {
     phone !: number;
     email !: string;
     img !: string;
+    id !: number;
 }
