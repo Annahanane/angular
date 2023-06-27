@@ -5,4 +5,6 @@ export class Produit {
     collection !: string;
     prix !: number;
     img !: string;
+    id !: number;
+    
 }
